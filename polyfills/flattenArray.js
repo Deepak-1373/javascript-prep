@@ -1,4 +1,8 @@
-const array = [[[1, 2], [[3, [10, [20]]]]], 4];
+const array = [
+  [1, 2],
+  [3, [4]],
+  [5, 6, [7, 8]],
+];
 
 // appraoch - 1 using Array.flat(depth)
 console.log(array.flat());
