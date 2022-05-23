@@ -28,7 +28,7 @@ Promise.myAll = function (promiseArray) {
 };
 
 const p1 = Promise.resolve(3);
-const p2 = Promise.reject("Unknown");
+const p2 = Promise.resolve("Unknown");
 const p3 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("foo");
