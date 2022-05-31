@@ -26,6 +26,11 @@ Promise.myAllSettled = function (promiseArray) {
           if (result.length === promiseArray.length) {
             resolve(result);
           }
+        })
+        .finally(() => {
+          if (output.length === promiseArray.length) {
+            resolve(result);
+          }
         });
     });
   });
