@@ -28,7 +28,7 @@ Promise.myAllSettled = function (promiseArray) {
           }
         })
         .finally(() => {
-          if (output.length === promiseArray.length) {
+          if (result.length === promiseArray.length) {
             resolve(result);
           }
         });
